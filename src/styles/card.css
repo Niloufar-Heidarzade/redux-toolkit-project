@@ -1,0 +1,126 @@
+.card {
+  width: 80%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  height: 150px;
+  align-items: center;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.315);
+}
+.logoAndInfo {
+  display: flex;
+  align-items: center;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  row-gap: 13px;
+}
+.infoHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.timeAndLocation {
+  display: flex;
+  align-items: center;
+  gap: 19px;
+  font-size: 15px;
+  color: grey;
+}
+.tags {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logoAndInfo img {
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+}
+.info h1 {
+  font-size: 20px;
+  font-weight: 700;
+}
+.infoHeader p {
+  font-size: 15px;
+  color: hsl(180, 29%, 50%);
+}
+.new {
+  background-color: hsl(180, 29%, 50%);
+  color: white;
+  font-size: 15px;
+  width: 49px;
+  height: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3px;
+  border-radius: 20px;
+}
+.featured {
+  background-color: hsl(180, 14%, 20%);
+  color: white;
+  font-size: 15px;
+  width: 79px;
+  height: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3px;
+  border-radius: 20px;
+}
+.tags div {
+  background-color: hsl(180, 31%, 95%);
+  padding: 8px;
+  font-size: 15px;
+  color: hsl(180, 29%, 50%);
+  font-weight: 700;
+  border-radius: 6px;
+}
+.tags div:hover {
+  cursor: pointer;
+  background-color: hsl(180, 29%, 50%);
+  color: white;
+}
+.divider {
+  display:none;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(128, 128, 128, 0.64);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+@media (max-width: 1044px) {
+  .card {
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    justify-content: center;
+    row-gap: 10px;
+  }
+  .logoAndInfo {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .divider {
+    display: block;
+  }
+  .tags {
+    flex-wrap: wrap;
+  }
+  .logoAndInfo img {
+    position: absolute;
+    top: -40px;
+  }
+  .info {
+    margin-top: 20px;
+  }
+}
