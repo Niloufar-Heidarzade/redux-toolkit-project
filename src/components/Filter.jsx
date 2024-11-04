@@ -1,6 +1,6 @@
 import "../styles/filter.css";
 import { useSelector , useDispatch } from "react-redux";
-import { deleteFilter } from "../redux/filtersSlice";
+import { deleteFilter , removeAll} from "../redux/filtersSlice";
 
 function Filter() {
 
@@ -19,7 +19,7 @@ function Filter() {
           <div className="cross" onClick={() => handleDeleteFilter(item)}></div>
           </div>)}
       </div>
-      <p>Clear</p> 
+      <p onClick={() => dispatch(removeAll())}>Clear</p> 
     </div>
     </>
   )

@@ -39,3 +39,10 @@
 .cross:hover {
   background-image: url("/images/black-cross.png");
 }
+.filterBox p {
+  color: hsl(180, 29%, 50%);
+  cursor: pointer;
+}
+.filterBox p:hover {
+  text-decoration: underline;
+}
